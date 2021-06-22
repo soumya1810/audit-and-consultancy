@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+
+    <title>Audit and Consultancy Form</title>
+<style type="text/css">
+  .values li{
+  display: inline;
+  
+}
+body {
+  background: #642B73;  
+background: -webkit-linear-gradient(to right, #C6426E, #642B73);  
+background: linear-gradient(to right, #C6426E, #642B73); 
+}
+</style>
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid mt-5" style="padding-bottom: 1%; padding-top: 0.5%;">
+  <div class="container">
+    <h1 class="display-4 text-center">Audit and Consultancy Form</h1>
+   
+  </div>
+</div>
+
+
+<div class="jumbotron w-50 h-50 align-middle shadow-lg p-3 mb-5 bg-black rounded" style="margin-left: 25%;">
+  <form>
+     <div class="form-group">
+    <label for="formGroupExampleInput">Company Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter company name...">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Company Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address...">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+   <div class="form-group">
+    
+    <label for="country">Country</label>
+    <select class="form-control" id="country" name="country">
+     <option value="">Select Country</option>
+      <option value="in">India</option>
+      <option value="us">US Region</option>
+      <option value="gf">Gulf Region</option>
+      <option value="af">African Region</option>
+      
+    </select>
+    </div>
+
+
+  <div class="form-group">
+    <label for="services">Service Type</label>
+    <select class="form-control" id="services" name="services">
+      <option value="" muted>Select</option>
+      <option value="audit">Audit</option>
+      <option value="consultancy">consultancy</option>
+      <option value="ac">Audit and consultancy</option>
+      
+    </select>
+    </div>
+
+
+
+
+
+
+   <div class="form-group" style="display:none;" id="audits">
+    
+
+     <label for="audits">Audit Type</label>
+    <select class="form-control">
+      <option value="">Select Audit Type</option>
+      
+     
+      <option value="A1">Audit Type 1</option>
+
+      <option value="A2">Audit Type 2</option>
+      <option value="A3">Audit Type 3</option>
+      <option value="A4">Audit Type 4</option>
+      <option value="A5">Audit Type 5</option>
+      <option value="A6">Audit Type 6</option>
+      <option value="A7">Audit Type 7</option>
+
+    </select>
+
+     <div class="india" style="display:none;">
+    <label >Service Charges</label>
+    <input type="range" name="iaInputName" id="iaInputId" value="10" min="10" max="70" oninput="iaOutputId.value = iaInputId.value" style="width:350px">
+    <output name="iaOutputName" id="iaOutputId">10k</output>
+    <div class="values">
+  <ul style="list-style: none; margin-left: 14%;" >
+    <li style="padding-right: 25px;">10k</li>
+    <li style="padding-right: 25px;">20k</li>
+    <li style="padding-right: 25px;">30k</li>
+    <li style="padding-right: 25px;">40k</li>
+    <li style="padding-right: 25px;">50k</li>
+    <li style="padding-right: 25px;">60k</li>
+    <li style="padding-right: 25px;">70k</li>
+  </ul>
+</div>
+
+  </div>
+  <div class="usa" style="display:none;">
+    <label class="mt-5" >Service Charges</label>
+    <input type="range" name="uaInputName" id="uaInputId" value="800" min="800" max="3000" oninput="uaOutputId.value = uaInputId.value" style="width:400px">
+    <output name="uaOutputName" id="uaOutputId">800$</output>
+    <div class="values">
+  <ul style="list-style: none; margin-left: 10%;" >
+    <li style="padding-right: 17px;">800$</li>
+    <li style="padding-right: 17px;">1100$</li>
+    <li style="padding-right: 17px;">1500$</li>
+    <li style="padding-right: 17px;">1900$</li>
+    <li style="padding-right: 17px;">2300$</li>
+    <li style="padding-right: 17px;">2700$</li>
+    <li style="padding-right: 17px;">3000$</li>
+  </ul>
+</div>
+
+  </div>
+  <div class="africa" style="display:none;">
+    <label >Service Charges</label>
+    <input type="range" name="afInputName" id="afInputId" value="200" min="200" max="500" oninput="afOutputId.value = afInputId.value" style="width:350px">
+    <output name="afOutputName" id="afOutputId">200$</output>
+     <div class="values">
+  <ul style="list-style: none; margin-left: 14%;" >
+    <li style="padding-right: 17px;">200$</li>
+    <li style="padding-right: 17px;">260$</li>
+    <li style="padding-right: 17px;">300$</li>
+    <li style="padding-right: 17px;">360$</li>
+    <li style="padding-right: 17px;">400$</li>
+    <li style="padding-right: 17px;">460$</li>
+    <li style="padding-right: 17px;">500$</li>
+  </ul>
+</div>
+  </div>
+  <div class="gulf" style="display:none;">
+    <label >Service Charges</label>
+    <input type="range" name="gfInputName" id="gfInputId" value="300" min="300" max="800" oninput="gfOutputId.value = gfInputId.value" style="width:350px">
+    <output name="gfOutputName" id="gfOutputId">300</output>
+    <div class="values">
+  <ul style="list-style: none; margin-left: 14%;" >
+    <li style="padding-right: 17px;">300$</li>
+    <li style="padding-right: 17px;">380$</li>
+    <li style="padding-right: 17px;">460$</li>
+    <li style="padding-right: 17px;">520$</li>
+    <li style="padding-right: 17px;">600$</li>
+    <li style="padding-right: 17px;">680$</li>
+    <li style="padding-right: 17px;">800$</li>
+  </ul>
+</div>
+  </div>
+    </div>
+
+<div class="form-group" style="display:none;" id="consultancies">
+   <div class="india" style="display:none;">
+    <label >Consultancy Charges</label>
+    <input type="range" name="icInputName" id="icInputId" value="50" min="50" max="10000" oninput="icOutputId.value = icInputId.value" style="width:350px">
+    <output name="icOutputName" id="icOutputId">50K</output>
+    <div class="values">
+  <ul style="list-style: none; margin-left: 18%;" >
+    <li>50k</li>
+    
+    <li style="padding-left: 70%;">1Cr</li>
+  </ul>
+</div>
+  </div>
+  <div class="usa" style="display:none;">
+    <label >Consultancy Charges</label>
+    <input type="range" name="uscInputName" id="uscInputId" value="4000" min="4000" max="800000" oninput="uscOutputId.value = usInputId.value" style="width:350px">
+    <output name="uscOutputName" id="uscOutputId">1000</output>
+       <div class="values">
+  <ul style="list-style: none; margin-left: 14%;" >
+    <li>4000$</li>
+    
+    <li style="padding-left: 64%;">800000$</li>
+  </ul>
+</div>
+  </div>
+  <div class="africa" style="display:none;">
+    <label class="mt-5">Consultancy Charges</label>
+    <input type="range" name="acInputName" id="acInputId" value="1500" min="1500" max="300000" oninput="acOutputId.value = acInputId.value" style="width:350px">
+    <output name="acOutputName" id="acOutputId">1500$</output>
+    
+    <div class="values">
+    <ul style="list-style: none; margin-left: 14%;" >
+    <li>1500$</li>
+    
+    <li style="padding-left: 64%;">300000$</li>
+  </ul>
+  </div>
+</div>
+  <div class="gulf" style="display:none;">
+    <label >Consultancy Charges</label>
+    <input type="range" name="gcInputName" id="gcInputId" value="1000" min="1000" max="200000" oninput="gcOutputId.value = gcInputId.value" style="width:350px">
+    <output name="gcOutputName" id="gcOutputId">1000$</output>
+    <div class="values">
+    <ul style="list-style: none; margin-left: 14%;" >
+    <li>1000$</li>
+    
+    <li style="padding-left: 65%;">200000$</li>
+  </ul>
+  </div>
+  </div>
+
+</div>
+
+
+  
+ 
+
+
+  
+
+ 
+
+ 
+
+  <div class="form-group form-check">
+
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+ 
+
+ <script type="text/javascript">
+      $('#services').on('change',function(){
+    if( $(this).val()==="audit"){
+    $("#audits").show()
+    }
+    else{
+    $("#audits").hide()
+    }
+    if( $(this).val()==="consultancy"){
+    $("#consultancies").show()
+    }
+    else{
+    $("#consultancies").hide()
+    }
+    if( $(this).val()==="ac"){
+    // $("#audit_consultancy").show()
+    $("#audits").show()
+    $("#consultancies").show()
+    }
+    else{
+    $("#audit_consultancy").hide()
+    }
+});
+
+$('#country').on('change',function(){
+    if( $(this).val()==="in"){
+    $(".india").show()
+    }
+    else{
+    $(".india").hide()
+    }
+    if( $(this).val()==="us"){
+    $(".usa").show()
+    }
+    else{
+    $(".usa").hide()
+    }
+    if( $(this).val()==="af"){
+    $(".africa").show()
+    }
+    else{
+    $(".africa").hide()
+    }
+    if( $(this).val()==="gf"){
+    $(".gulf").show()
+    }
+    else{
+    $(".gulf").hide()
+    }
+ 
+  });
+  
+
+    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+    
+  </body>
+</html>
